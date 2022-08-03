@@ -1,0 +1,242 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    top: 25vh;
+    left: 30vw;
+    background: linear-gradient(rgb(209, 136, 1), rgb(255, 167, 3));
+    z-index: 10;
+    position: fixed;
+    overflow-y: hidden;
+}
+
+.container > p{
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    width: 235px;
+}
+
+.cookie{
+    height: 265px;
+    width: 265px;
+    display: block;
+    width: 244px;
+    background-image: none;
+    position: absolute;
+    left: 249px;
+    bottom: 63px;
+    animation: MoveUpDown 3s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0% {
+        bottom: 23px;
+        transform: rotate(0);
+    }
+    50% { 
+        bottom: 0px;
+        transform: rotate(30deg);
+    }
+    100%{
+        bottom: 23px;
+        transform: rotate(0);
+    }
+}
+
+.container > button {
+    background-color: rgb(237,189,105);
+    color: black;
+    height: 50px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: large;
+}
+
+.container > button:hover{
+    background-color: rgb(252, 191, 86);
+}
+
+.container > button:active{
+    background-color: rgb(250, 179, 56);   
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,80%);
+    height: 100vh;
+    width: 100vw;
+    z-index:1;
+    position: fixed;
+}
+
+.firstscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(186, 255, 108), rgb(168, 252, 1));
+    height: 100vh;
+    width: 100vw;
+}
+
+.secondscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(168, 252, 1), rgb(229, 248, 54));
+    height: 100vh;
+    width: 100vw;
+}
+
+.thirdscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(229, 248, 54), rgb(0, 255, 179));
+    height: 100vh;
+    width: 100vw;
+}
+
+.fourthscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(11,255,173), rgb(107, 200, 243));
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.fifthscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(107,200,243), rgb(209, 5, 182));
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.sixthscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(209, 5, 182), rgb(134, 2, 117));
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.seventhscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(134, 2, 117), rgb(250, 76, 227));
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.eighthscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(250, 76, 227), rgb(209, 14, 95));
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.ninthscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(209, 14, 95), rgb(255, 102, 1));
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.tenthscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;;
+    font-size: 40px;
+    background: linear-gradient(rgb(225, 102, 1), rgb(182, 247, 3));
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+video{
+    height: 13em;
+}
+
+iframe{
+    margin-top: 220px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: grey;
+}
+
+
+.percent{
+    position: fixed;
+    top: 0%;
+    background-color: white;
+    height: 5px;
+    width: 0;
+    z-index: 100;
+}
+
+span {
+    text-shadow: -2px -4px rgb(51, 51, 51);
+    margin-left: 10px;
+    font-size: 60px;
+}
